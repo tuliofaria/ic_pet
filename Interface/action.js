@@ -1,3 +1,9 @@
+/*
+ * Funções de controle
+ *  1. Criação de enquetes
+ *  2. Seleção de botões
+ */
+
 (function () {
 	var app = angular.module( 'action', [] );
 	
