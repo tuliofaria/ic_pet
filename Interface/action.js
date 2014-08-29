@@ -24,16 +24,11 @@
 		
 		this.addAlternativa = function(resposta) {
 			this.alternativas.push({texto: resposta});
-            resposta = '';
+            
+/*          não consigo 'apagar' o texto da caixa depois
+            que a alternativa é enviada para a pilha
+*/
 		};
 	});
 	
 })();
-
-var respostas = [
-];
-var times = [
-	{nome: "Corinthians"},
-	{nome: "Palmeiras"},
-	{nome: "São Paulo"}
-];
