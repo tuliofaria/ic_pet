@@ -1,44 +1,11 @@
 
 /* Configurações Gerais */
-body {
-	background-color:#FFF;
-	font-family: Helvetica, sans-serif;
-	
-}
 
-#interface {
-	background-color: #FFF;
-	width: 1000px;
-	height: 800px;
-	margin: auto;
-/* 	border: rgba(0,0,0,0.67) solid 2px; */
-}
-
-#poll {
-	margin: 40px 0px 0px 50px;
-	font-size: 25px;
-}
-
-form.formulario {
-	width: 300px;
-	float: none;
-	margin: auto;
-}
-
-p#titulo {
-	text-align: center;
-	font-size: 36px;
-	padding-top: 30px;
-}
 
 /* Configuração dos botões */
 #botoes {
-	width: 800px;
-	height: 213px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 90px;
 	display: block;
+	border: 1px dashed black;
 }
 
 .botao {
@@ -52,7 +19,7 @@ p#titulo {
 /* Cor das opções */
 
 .bom {background-color: rgb(95,183,50)}
-.medio {background-color: rgba(255,231,4,1)}
+.medio {background-color: rgb(255,231,4)}
 .ruim {background-color: #f72121;}
 .ruim p {color: white}
 td.ruim {color: white}
@@ -69,7 +36,7 @@ td.ruim {color: white}
 /* Posicionamento */
 
 div.bom {float: left}
-div.medio {float: none; margin: auto}
+div.medio {float: none; margin: auto }
 div.ruim {float: right}
 
 /* Efeito dos botões */
@@ -107,28 +74,9 @@ div.ruim {float: right}
 }
 
 /* Configuração dos botões Votar e Voltar */
-#votar {
-	font-size: 20px;
-	color: #2ebbfb;
-	background-color: #0068B4;
-	border-radius: 40px;
-	width: 100px;
-	height: 30px;
-	float: none;
-	margin: auto;
-	margin-top: 80px;
-	padding: 6px 0px 0px 0px;
-	text-align: center;
-	transition: background-color .3s;
-}
-
-#votar:hover, #voltar:hover{
-	color: #0068B4;
-	background-color: #2ebbfb;
-}
-a {
-	text-decoration: none;
-	color: black;
+.votar {
+    border: 1px solid black;
+    float: none;
 }
 
 /* Configuração da tabela de resultados */
@@ -148,3 +96,10 @@ table#resultados {
 th {background-color: #7ab5e2;font-weight: 400}
 tr, td {width: 200px;height: 45px}
 .par {background-color: rgb(220,220,220)}
+.centralizado {
+    margin: auto;
+    float: none;
+    width: 5em;
+}
+
+

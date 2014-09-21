@@ -6,10 +6,9 @@
 
 (function () {
 	var app = angular.module( 'action', [] );
-	
-	app.controller( 'buttonController', function() {
-		this.seletor = seletores;
 		
+	app.controller( 'buttonController', function() {
+		this.seletor = seletores;		
 	});
     
 	var seletores = [
@@ -17,18 +16,35 @@
 		{ name : 'médio' },
 		{ name : 'ruim' }
 	]
-    
-    
-	app.controller( 'AlternativaCtrl', function() {
-        this.alternativas = respostas;
+	
+	app.controller( 'AlternativaCtrl', function($scope) {
+        $scope.alternativas = [];
 		
-		this.addAlternativa = function(resposta) {
-			this.alternativas.push({texto: resposta});
-            
+		$scope.addAlternativa = function() {
+			this.alternativas.push({texto: this.novaAlternativa});
+            this.novaAlternativa = '';
 /*          não consigo 'apagar' o texto da caixa depois
             que a alternativa é enviada para a pilha
 */
 		};
 	});
-	
 })();
+
+//function TodoCtrl($scope) {
+//	
+//	$scope.name = "Ed";
+//	
+//    $scope.todos = [
+//        {text:'Learn AngularJS', done:false},
+//        {text:'Build an app', done:false}
+//    ];
+//
+//    $scope.getTotal = function () {
+//        return $scope.todos.length;
+//    };
+//
+//    $scope.addTodo = function () {
+//        $scope.todos.push({text:$scope.formTodoText, done:false});
+//        $scope.formTodoText = '';
+//    };
+//}
