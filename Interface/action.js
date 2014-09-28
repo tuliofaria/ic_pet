@@ -6,17 +6,15 @@
 
 (function () {
 	var app = angular.module( 'action', [] );
-		
-	app.controller( 'buttonController', function() {
-		this.seletor = seletores;		
+
+	app.controller( 'opcaoCtrl', function($scope) {
+		$scope.seletor = [
+			{ name : 'bom' },
+			{ name : 'médio' },
+			{ name : 'ruim' }
+		]
 	});
-    
-	var seletores = [
-		{ name : 'bom' },
-		{ name : 'médio' },
-		{ name : 'ruim' }
-	]
-	
+    	
 	app.controller( 'AlternativaCtrl', function($scope) {
         $scope.alternativas = [];
 		
@@ -25,4 +23,5 @@
             this.novaAlternativa = '';
 		};
 	});
+	
 })();

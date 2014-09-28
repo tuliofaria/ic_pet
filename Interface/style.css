@@ -3,26 +3,21 @@
 
 
 /* Configuração dos botões */
-#botoes {
-	display: block;
-	border: 1px dashed black;
-}
 
 .botao {
-	width: 132px;
-	height: 213px;
 	border-radius: 10px;
 	position: relative;
-	transition: background-color 0.5s;
+/*	height: 200px;*/
+	transition: background-color .3s;
 }
 
 /* Cor das opções */
 
-.bom {background-color: rgb(95,183,50)}
-.medio {background-color: rgb(255,231,4)}
-.ruim {background-color: #f72121;}
+.bom {background-color: rgb(80, 200, 10)}
+.medio {background-color: rgb(250, 230, 0)}
+.ruim {background-color: rgb(250, 60, 0);}
+
 .ruim p {color: white}
-td.ruim {color: white}
 .selecao { 
 	float: none;
 	margin: auto;
@@ -33,32 +28,24 @@ td.ruim {color: white}
 	background-color: #e9e9e9;
 }
 
-/* Posicionamento */
-
-div.bom {float: left}
-div.medio {float: none; margin: auto }
-div.ruim {float: right}
-
 /* Efeito dos botões */
 .bom:hover {background-color: #009835}
 .medio:hover {background-color: #fbd100}
 .ruim:hover {background-color: #C00}
 
-#emoticon {
+.emoticon {
 	width: 70px;
 	height: 70px;
-	margin: 30px 31px 0px 31px;
-	position: absolute;
+	position: relative;
+	margin-top: 10px;
 }
 
 .legenda {
-	width: 100px;
 	font-size: 25px;
 	font-weight: 300;
 	text-transform: uppercase;
-	margin: 150px 16px 0px 16px;
-	position: absolute;
-	text-align: center;
+/*	margin: 150px 16px 0px 16px;*/
+	position: relative;
 	color: black;
 }
 
@@ -71,35 +58,16 @@ div.ruim {float: right}
 	height: auto;
 	font-size: 30px;
 	text-transform: capitalize;
+	text-decoration: none;
 }
 
-/* Configuração dos botões Votar e Voltar */
-.votar {
-    border: 1px solid black;
-    float: none;
-}
 
-/* Configuração da tabela de resultados */
-
-table#resultados {
-	width: 700px;
-	height: 250px;
-	font-weight: 100;
-	margin: auto;
-	margin-top: 100px;
-	font-size: 20px;
-	text-align: center;
-	border-radius: 20px;
-	border-collapse: collapse;
-}
-
-th {background-color: #7ab5e2;font-weight: 400}
-tr, td {width: 200px;height: 45px}
-.par {background-color: rgb(220,220,220)}
 .centralizado {
     margin: auto;
     float: none;
     width: 5em;
 }
 
-
+.contorno {
+	border: 1px dashed black;
+}
