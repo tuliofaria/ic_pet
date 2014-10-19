@@ -65,9 +65,25 @@
 .centralizado {
     margin: auto;
     float: none;
-    width: 5em;
+	width: 90px;
+/*	border: 1px solid black;*/
 }
 
 .contorno {
 	border: 1px dashed black;
+}
+
+
+
+.esconder {
+	width: 0;
+	height: 0;
+	background: white;
+	border: 0;
+}
+
+
+
+.espaco {
+	margin-bottom: 10px;
 }

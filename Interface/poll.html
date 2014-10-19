@@ -33,29 +33,21 @@
 							<legend>Nova Enquete</legend>
 							<div class="form-group">
 								<label for="pergunta">Pergunta</label>                    
-								<input class="form-control" id="pergunta" name="pergunta" placeholder="Digite aqui a pergunta...">
+								<input class="form-control" type="text" id="pergunta" name="pergunta" placeholder="Digite aqui a pergunta...">
 							</div>
-							<ul class="list-group">
-								<li class="list-group-item" ng-repeat="alternativa in alternativas">{{alternativa.texto}}</li>
-<!--								<li class="list-group-item">{{novaAlternativa}}</li>-->
-							</ul>
-							<br>
-							
-							<div class="form-group">
-								<label for="pergunta">Alternativas</label>
-								<input ng-model="novaAlternativa" placeholder="Digite uma alternativa" class="form-control" />
+							<div class="input-group espaco" ng-repeat="alternativa in alternativas">
+								<input type="text" class="form-control" value="{{alternativa.texto}}">
+								<div class="input-group-addon" ng-click="remove(this)">-</div>
 							</div>
-							<button class="btn btn-default" ng-click="addAlternativa()">
-								<i class=""></i> Adicionar
-							</button>
+							<!-- Por enquanto ainda está na 'gambiarra' -->
+							<input type="text" class="form-control" ng-model="novaAlternativa" placeholder="Digite uma alternativa" />
+							<input type="submit" value="" ng-click="addAlternativa()" class="esconder" />				
 						</fieldset>
-
 					</form>
 				</div>
 			</div>
 			<hr>
 			<div class="centralizado">
-				<label class="" for="enviar"></label>
 				<button id="enviar" name="enviar" class="btn btn-primary">Enviar</button>
 			</div>
 		</div>

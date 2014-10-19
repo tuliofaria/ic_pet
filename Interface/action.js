@@ -22,6 +22,14 @@
 			this.alternativas.push({texto: this.novaAlternativa});
             this.novaAlternativa = '';
 		};
+		
+		/* Remoção do último elemento
+		 * Precisa funcionar para qualquer ordem
+		 */
+		$scope.remove = function() {
+			this.alternativas.pop();
+		};
+		
 	});
 	
 })();
