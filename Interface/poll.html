@@ -33,22 +33,22 @@
 							<legend>Nova Enquete</legend>
 							<div class="form-group">
 								<label for="pergunta">Pergunta</label>                    
-								<input class="form-control" type="text" id="pergunta" name="pergunta" placeholder="Digite aqui a pergunta...">
+								<input class="form-control" type="text" id="pergunta" name="pergunta" placeholder="Digite aqui a pergunta">
 							</div>
 							<div class="input-group espaco" ng-repeat="alternativa in alternativas">
 								<input type="text" class="form-control" value="{{alternativa.texto}}">
-								<div class="input-group-addon" ng-click="remove(this)">-</div>
+								<div class="input-group-addon" ng-click="subAlternativa(alternativa)"><a href="">-</a></div>
 							</div>
 							<!-- Por enquanto ainda está na 'gambiarra' -->
 							<input type="text" class="form-control" ng-model="novaAlternativa" placeholder="Digite uma alternativa" />
-							<input type="submit" value="" ng-click="addAlternativa()" class="esconder" />				
+							<input type="submit" value="" ng-click="addAlternativa()" ng-show="false" />
 						</fieldset>
 					</form>
 				</div>
 			</div>
 			<hr>
 			<div class="centralizado">
-				<button id="enviar" name="enviar" class="btn btn-primary">Enviar</button>
+				<p class="text-center"><button id="enviar" name="enviar" class="btn btn-primary">Enviar</button></p>
 			</div>
 		</div>
 	</body>

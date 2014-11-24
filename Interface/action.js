@@ -5,29 +5,30 @@
  */
 
 (function () {
-	var app = angular.module( 'action', [] );
+	var app = angular.module('action', []);
 
-	app.controller( 'opcaoCtrl', function($scope) {
+	app.controller('opcaoCtrl', function ($scope) {
 		$scope.seletor = [
 			{ name : 'bom' },
 			{ name : 'médio' },
 			{ name : 'ruim' }
-		]
+		];
 	});
-    	
-	app.controller( 'AlternativaCtrl', function($scope) {
-        $scope.alternativas = [];
+    
+	app.controller('AlternativaCtrl', function ($scope) {
 		
-		$scope.addAlternativa = function() {
-			this.alternativas.push({texto: this.novaAlternativa});
-            this.novaAlternativa = '';
+		$scope.alternativas = [];
+		
+		$scope.addAlternativa = function () {
+			if ($scope.novaAlternativa) {	// apenas valida se houver algum texto
+				$scope.alternativas.push({texto: $scope.novaAlternativa});
+				this.novaAlternativa = '';	// limpa o campo
+			}
 		};
 		
-		/* Remoção do último elemento
-		 * Precisa funcionar para qualquer ordem
-		 */
-		$scope.remove = function() {
-			this.alternativas.pop();
+		$scope.subAlternativa = function (alternativa) {
+			var posicao = $scope.alternativas.indexOf(alternativa);	// obtem o 'endereço' da alternativa
+			$scope.alternativas.splice( posicao, 1 );				// e remove ela da lista
 		};
 		
 	});

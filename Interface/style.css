@@ -5,6 +5,7 @@
 /* Configuração dos botões */
 
 .botao {
+	margin-top: 20px;
 	border-radius: 10px;
 	position: relative;
 /*	height: 200px;*/
@@ -34,17 +35,17 @@
 .ruim:hover {background-color: #C00}
 
 .emoticon {
-	width: 70px;
-	height: 70px;
+	width: 90%;
+	height: 90%;
 	position: relative;
 	margin-top: 10px;
 }
 
 .legenda {
-	font-size: 25px;
+	font-size: large;
 	font-weight: 300;
 	text-transform: uppercase;
-/*	margin: 150px 16px 0px 16px;*/
+	margin: 1% 0 0 0;
 	position: relative;
 	color: black;
 }
@@ -78,7 +79,7 @@
 .esconder {
 	width: 0;
 	height: 0;
-	background: white;
+	background:s white;
 	border: 0;
 }
 
@@ -86,4 +87,9 @@
 
 .espaco {
 	margin-bottom: 10px;
+}
+
+.teste {
+	font-size: 100%;
+	width: 100%;
 }

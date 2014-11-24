@@ -29,7 +29,6 @@
 			<h1 class="text-center">Pergunta</h1><hr>
 			<p class="text-center">Selecione o botão conforme o seu entendimento do conteúdo. Mude a qualquer momento se você <span class="label label-success">está entendendo</span>, se tem <span class="label label-warning">alguma dificuldade</span> ou <span class="label label-danger">complicou muito</span>.</p>
 			<hr>
-			
 			<div ng-controller="opcaoCtrl" class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
 				<div class="row text-center">
 					<a href ng-click="tab = 'bom'">
@@ -41,11 +40,10 @@
 					
 					<a href ng-click="tab = 'médio'">
 						<div ng-class="{active:tab === {{seletor[1].name}}" class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2 botao medio">
-							<img src="neutro.png" class="emoticon hidden-xs"><i class="fa fa-smile-o fa-5x"></i><br>
+							<img src="neutro.png" class="emoticon hidden-xs"><br>
 							<p class="legenda" >{{seletor[1].name}}</p>
 						</div>
 					</a>
-					
 					<a href ng-click="tab = 'ruim'">
 						<div ng-class="{active:tab === {{seletor[1].name}}" class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2 botao ruim">
 							<img src="triste.png" class="emoticon hidden-xs"><br>
