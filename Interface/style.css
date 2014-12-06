@@ -1,22 +1,19 @@
 
-/* Configurações Gerais */
-
-
 /* Configuração dos botões */
 
 .botao {
+	padding: 4px 10px 20px;
 	margin-top: 20px;
 	border-radius: 10px;
 	position: relative;
-/*	height: 200px;*/
 	transition: background-color .3s;
 }
 
 /* Cor das opções */
 
-.bom {background-color: rgb(80, 200, 10)}
+.bom {background-color: #5cb85c}
 .medio {background-color: rgb(250, 230, 0)}
-.ruim {background-color: rgb(250, 60, 0);}
+.ruim {background-color: #d9534f}
 
 .ruim p {color: white}
 .selecao { 
@@ -30,9 +27,9 @@
 }
 
 /* Efeito dos botões */
-.bom:hover {background-color: #009835}
-.medio:hover {background-color: #fbd100}
-.ruim:hover {background-color: #C00}
+.bom:hover {background-color: #449d44 }
+.medio:hover {background-color:  #eccc1f}
+.ruim:hover {background-color: #c9302c}
 
 .emoticon {
 	width: 90%;
@@ -80,6 +77,7 @@
 	width: 0;
 	height: 0;
 	background:s white;
+	padding: 0;
 	border: 0;
 }
 

@@ -37,11 +37,11 @@
 							</div>
 							<div class="input-group espaco" ng-repeat="alternativa in alternativas">
 								<input type="text" class="form-control" value="{{alternativa.texto}}">
-								<div class="input-group-addon" ng-click="subAlternativa(alternativa)"><a href="">-</a></div>
+								<div class="input-group-addon" ng-click="subAlternativa(alternativa)">-</div>
 							</div>
 							<!-- Por enquanto ainda está na 'gambiarra' -->
 							<input type="text" class="form-control" ng-model="novaAlternativa" placeholder="Digite uma alternativa" />
-							<input type="submit" value="" ng-click="addAlternativa()" ng-show="false" />
+							<input type="submit" ng-click="addAlternativa()" ng-hide="" class="esconder" />
 						</fieldset>
 					</form>
 				</div>
