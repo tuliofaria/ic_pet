@@ -39,9 +39,8 @@
 								<input type="text" class="form-control" value="{{alternativa.texto}}">
 								<div class="input-group-addon" ng-click="subAlternativa(alternativa)">-</div>
 							</div>
-							<!-- Por enquanto ainda está na 'gambiarra' -->
 							<input type="text" class="form-control" ng-model="novaAlternativa" placeholder="Digite uma alternativa" />
-							<input type="submit" ng-click="addAlternativa()" ng-hide="" class="esconder" />
+							<input type="submit" ng-click="addAlternativa(alternativa)" ng-hide="" class="esconder" />
 						</fieldset>
 					</form>
 				</div>

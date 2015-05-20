@@ -18,11 +18,11 @@
 	app.controller('AlternativaCtrl', function ($scope) {
 		
 		$scope.alternativas = [];
-		
-		$scope.addAlternativa = function () {
+
+		$scope.addAlternativa = function (alternativa) {
 			if ($scope.novaAlternativa) {	// apenas valida se houver algum texto
-				$scope.alternativas.push({texto: $scope.novaAlternativa});
-				this.novaAlternativa = '';	// limpa o campo
+				$scope.alternativas.push({texto: $scope.novaAlternativa});	// insere
+				delete $scope.novaAlternativa; // limpa o campo
 			}
 		};
 		
